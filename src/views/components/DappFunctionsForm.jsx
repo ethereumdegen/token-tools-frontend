@@ -20,8 +20,12 @@ const callContractFn = async( funcName, funcArgs )=>{
   let signer = provider.getSigner(web3Store.account)
 
   let contract = new ethers.Contract(contractAddress, contractAbi, signer);
+  
+  let options = {
+   // gasLimit: 3000000,
+  }
 
-  let response = await contract[funcName](...funcArgs)
+  let response = await contract[funcName](...funcArgs, options)
 
   console.log({response})
   return response 
