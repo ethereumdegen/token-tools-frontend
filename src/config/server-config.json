@@ -1,0 +1,15 @@
+{
+    "development":{
+        "backendServerUrl":"http://localhost:8000",
+        "mevCloudServerUri":"ws://198.199.70.164:8010"
+    },
+    "staging":{
+        "backendServerUrl":"http://localhost:8000",
+        "mevCloudServerUri":"ws://198.199.70.164:8010"
+    },
+    "production":{
+        "backendServerUrl":"http://localhost:8000",
+        "mevCloudServerUri":"ws://198.199.70.164:8010"
+    } 
+
+}
